@@ -1,0 +1,131 @@
+#wrap-content {
+    background: #f8f9fa;
+    padding: 50px 0 80px;
+  }
+  
+  #content.container_16 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  /* Page title */
+  #content h1 {
+    font-size: 36px !important;
+    color: #1a1a1a !important;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+  }
+  
+  #content > p:first-of-type {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+  }
+  
+  /* Lab sections */
+  #content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 50px 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #3498db;
+  }
+  
+  #content h5 strong {
+    color: inherit !important;
+    font-weight: inherit;
+  }
+  
+  /* Lab content blocks */
+  #content > p {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    overflow: hidden;
+  }
+  
+  /* Lab images */
+  .image-left {
+    float: left;
+    margin: 0 25px 15px 0;
+    width: 280px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lab names in bold */
+  #content p strong {
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Lab specifications styling */
+  #content p br + strong {
+    display: block;
+    margin-top: 15px;
+    color: #3498db;
+    font-size: 15px;
+  }
+  
+  /* Links */
+  #content a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  #content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Policies section at bottom */
+  #content > p:last-of-type {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 25px 30px;
+    margin-top: 60px;
+  }
+  
+  #content > p:last-of-type strong {
+    color: #856404;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Policy text styling */
+  #content p[style*="margin-left"] {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-left: 0 !important;
+    line-height: 2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #content h1 {
+      font-size: 28px !important;
+    }
+    
+    .image-left {
+      float: none;
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    
+    #content > p {
+      padding: 20px;
+    }
+  }
