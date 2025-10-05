@@ -1,74 +1,89 @@
+/* Faculty Profile Page - Clean Professional Design */
+
 #wrap-content {
     background: #ffffff;
     padding: 40px 0;
   }
   
   #content.container_12 {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
   
-  /* Profile header with photo and name side by side */
+  /* Profile header layout */
+  #content > div {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0 40px;
+  }
+  
   #avatar {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    margin: 0 !important;
+    float: none !important;
   }
   
   #avatar img {
-    width: 180px;
-    height: 240px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
     object-fit: cover;
-    border: 1px solid #ddd;
+    border: 1px solid #e0e0e0;
   }
   
   #fullname {
-    font-size: 28px;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    font-size: 32px;
     font-weight: 600;
-    color: #222;
-    margin: 0 0 20px 50px;
-    padding-top: 10px;
+    color: #1a1a1a;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    float: none !important;
   }
   
-  /* Contact info box */
   #short-info {
-    clear: none;
-    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0 !important;
+    float: none !important;
   }
   
   #postion {
     font-size: 16px;
     color: #666;
-    font-weight: 500;
-    margin-bottom: 20px;
-    margin-left: 50px;
+    font-weight: 400;
+    margin: 0 0 20px 0 !important;
   }
   
   #contacts {
-    margin-top: 15px;
-    margin-left: 50px;
+    margin: 0 !important;
   }
   
-  #office, #phone, #mail, #update {
-    margin: 10px 0;
+  #office, #phone, #mail {
+    margin: 12px 0;
   }
   
   #contacts p, #contacts a {
     font-size: 14px;
     color: #555;
     line-height: 1.6;
+    display: flex;
+    align-items: center;
   }
   
   #contacts img {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
   }
   
   #contacts a {
     text-decoration: none;
-    color: #3498db;
+    color: #1e88e5;
   }
   
   #contacts a:hover {
@@ -76,41 +91,91 @@
   }
   
   #update p {
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
-    margin-top: 15px;
+    margin-top: 20px;
     padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e0e0e0;
   }
   
-  /* Research and courses sections */
-  #research, #courses {
-    margin-bottom: 30px;
+  /* Research section */
+  #research {
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0 !important;
+    float: none !important;
   }
   
-  #research h5, #courses h4, #courses h5 {
+  #research h5 {
     font-size: 18px;
     font-weight: 600;
-    color: #222;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 8px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1e88e5;
   }
   
-  #research ul, #courses ul {
+  #research ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
-  #research ul li, #courses ul li {
-    padding: 6px 0;
+  #research ul li {
+    padding: 8px 0 8px 20px;
     font-size: 14px;
     color: #555;
     line-height: 1.6;
+    position: relative;
+  }
+  
+  #research ul li:before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+  }
+  
+  /* Courses section */
+  #courses {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    margin: 30px 0 0 0 !important;
+    float: none !important;
+  }
+  
+  #courses h4, #courses h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1e88e5;
+  }
+  
+  #courses ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #courses ul li {
+    padding: 8px 0 8px 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  #courses ul li:before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
   }
   
   #courses ul li a {
-    color: #3498db;
+    color: #1e88e5;
     text-decoration: none;
   }
   
@@ -120,28 +185,30 @@
   
   /* Biography section */
   #bio {
+    grid-column: 1 / 4;
+    margin: 50px 0 0 0 !important;
+    padding-top: 40px !important;
+    border-top: 2px solid #e0e0e0;
+    float: none !important;
     clear: both;
-    margin-top: 40px;
-    padding-top: 30px;
-    border-top: 2px solid #eee;
   }
   
   #bio h4 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    color: #222;
-    margin-bottom: 15px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
   }
   
   #bio p {
     font-size: 15px;
     color: #555;
     line-height: 1.8;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
   
   #bio a {
-    color: #3498db;
+    color: #1e88e5;
     text-decoration: none;
   }
   
@@ -151,53 +218,93 @@
   
   /* Publications */
   #publications {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   
   #publications h4 {
     font-size: 18px;
     font-weight: 600;
-    color: #222;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 8px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1e88e5;
   }
   
   #publications p {
     font-size: 14px;
     color: #666;
     line-height: 1.7;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  
+  #publications ul {
+    list-style: none;
+    padding: 0;
   }
   
   #publications ul li {
     font-size: 14px;
     color: #666;
     line-height: 1.7;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   
-  /* Grid overrides - minimal changes */
+  /* Clear old styles */
+  .clear {
+    display: none;
+  }
+  
   .grid_2, .grid_4, .grid_6, .grid_8, .grid_10 {
-    margin-left: 0;
+    width: auto !important;
+    margin: 0 !important;
+    float: none !important;
   }
   
-  .p-top {
-    padding-top: 15px;
+  .p-top, .m-top {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
   
-  .m-top {
-    margin-top: 15px;
-  }
-  
-  @media (max-width: 768px) {
+  /* Responsive */
+  @media (max-width: 900px) {
+    #content > div {
+      grid-template-columns: 1fr;
+      gap: 20px 0;
+    }
+    
     #avatar {
-      float: none;
+      grid-column: 1;
+      grid-row: 1;
       text-align: center;
-      margin: 0 auto 20px;
+    }
+    
+    #avatar img {
+      max-width: 180px;
     }
     
     #fullname {
+      grid-column: 1;
+      grid-row: 2;
       text-align: center;
+    }
+    
+    #short-info {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    
+    #research {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    
+    #courses {
+      grid-column: 1;
+      grid-row: 5;
+    }
+    
+    #bio {
+      grid-column: 1;
+      grid-row: 6;
     }
   }
