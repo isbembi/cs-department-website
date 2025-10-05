@@ -1,0 +1,70 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+#nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+#nav ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+#nav ul li a:hover {
+  color: #0078ff;
+  border-bottom: 2px solid #0078ff;
+}
+
+
+body {
+  background: #f4f6f9;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#content {
+  background: white;
+  padding: 130px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#wrap-slider {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#mission {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#mission .grid_4 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+#mission .grid_4:hover {
+  transform: translateY(-5px);
+}
+
+#footer {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  color: #444;
+  font-size: 14px;
+}
+
