@@ -1,0 +1,96 @@
+
+/* ===== CONTENT ===== */
+#wrap-content {
+    margin-top: 30px;
+}
+
+#content {
+    background: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.page-heading {
+    font-size: 32px;
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0078ff;
+    padding-bottom: 10px;
+}
+
+/* ===== INFO PAGE IMAGES ===== */
+.image {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.f-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    max-width: 40%;
+}
+
+.f-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 40%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== TEXT STYLING ===== */
+#content p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .f-left, .f-right {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #content {
+        padding: 30px 15px;
+    }
+
+    .f-left, .f-right {
+        float: none;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
