@@ -541,4 +541,8 @@ margin: 0 20px 20px 0;
 opacity: 1;
 }
 
+#content h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
 
