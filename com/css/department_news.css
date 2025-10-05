@@ -42,25 +42,6 @@
     margin-bottom: 10px;
 }
 
-/* FOOTER */
-#footer-wrap {
-    margin-top: 50px;
-}
-
-#footer {
-    border-top: 1px solid #ccc;
-    padding: 20px 0;
-    font-size: 14px;
-    color: #444;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#footer .f-left,
-#footer .f-right {
-    margin: 5px 0;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
