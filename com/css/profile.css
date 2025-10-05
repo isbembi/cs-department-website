@@ -1,0 +1,203 @@
+#wrap-content {
+    background: #ffffff;
+    padding: 40px 0;
+  }
+  
+  #content.container_12 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Profile header with photo and name side by side */
+  #avatar {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #avatar img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  #fullname {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 20px 50px;
+    padding-top: 10px;
+  }
+  
+  /* Contact info box */
+  #short-info {
+    clear: none;
+    margin-bottom: 30px;
+  }
+  
+  #postion {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  
+  #contacts {
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  
+  #office, #phone, #mail, #update {
+    margin: 10px 0;
+  }
+  
+  #contacts p, #contacts a {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  #contacts img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  #contacts a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  #contacts a:hover {
+    text-decoration: underline;
+  }
+  
+  #update p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Research and courses sections */
+  #research, #courses {
+    margin-bottom: 30px;
+  }
+  
+  #research h5, #courses h4, #courses h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+  }
+  
+  #research ul, #courses ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #research ul li, #courses ul li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  #courses ul li a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  #courses ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Biography section */
+  #bio {
+    clear: both;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+  }
+  
+  #bio h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  #bio p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  
+  #bio a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  #bio a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Publications */
+  #publications {
+    margin-top: 30px;
+  }
+  
+  #publications h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+  }
+  
+  #publications p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  
+  #publications ul li {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  
+  /* Grid overrides - minimal changes */
+  .grid_2, .grid_4, .grid_6, .grid_8, .grid_10 {
+    margin-left: 0;
+  }
+  
+  .p-top {
+    padding-top: 15px;
+  }
+  
+  .m-top {
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    #avatar {
+      float: none;
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+    
+    #fullname {
+      text-align: center;
+    }
+  }
