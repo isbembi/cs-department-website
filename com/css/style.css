@@ -277,7 +277,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 14px;
+	gap: 12px;
 }
 .footer-icons {
 	display: flex;
