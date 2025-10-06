@@ -272,27 +272,35 @@ nav {
 /* `Footer
 -----------------------------------------------------------------------------------------------*/
 
-#footer-wrap{
-	height: 50px;	
-	background: #d3cfca;
-	background: url('../images/footer.jpg') repeat-x;
-	border-top: 1px solid #ccc;
-	box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
-	-o-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
-	-moz-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
-	-webkit-box-shadow: 0px 0px 3px 2px rgba( 224, 224, 224, 0.5 );
-	position: absolute;
-   	bottom: 0;
-   	width: 100%;
+#footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 12px;
 }
-	#footer{
-		padding-top: 16px;
-	}
-		#footer p{
-			color: #282e4e;
-			text-shadow: 1px 1px #eee;
-			font-size: 1.2em;
-		}
+.footer-icons {
+	display: flex;
+	gap: 10px;
+}
+.footer-icons .icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.05);
+	color: #111;
+	text-decoration: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	transition: 0.2s;
+}
+.footer-icons .icon:hover {
+	color: #0ea5e9;
+	transform: translateY(-3px);
+}
+
 
 /* `Other
 -----------------------------------------------------------------------------------------------*/
@@ -540,9 +548,3 @@ float: left;
 margin: 0 20px 20px 0;
 opacity: 1;
 }
-
-#content h2 {
-    color: #004080;
-    margin-bottom: 15px;
-}
-
