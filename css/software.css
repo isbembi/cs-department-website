@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+table tr.elements {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+}
+
+table tr.odd {
+    background-color: #f2f2f2;
+}
+
+table tr.even {
+    background-color: #fff;
+}
+
+table a {
+    color: #004080;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* ACCORDION CONTENT */
+.st-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
